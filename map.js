@@ -1,3 +1,10 @@
+function evenify_all(nums){
+    for (let i = 0; i < nums.length; i++) {
+        const element = nums[i];
+        evenify(element)
+    
+    }
+}
 function evenify(element){
     if (nums % 2 ==0) {
         console.log(element, ":Number is even")  
@@ -8,17 +15,11 @@ function evenify(element){
     
 }
 
-nums = [11,22,33,44,55]
-for (let i = 0; i < nums.length; i++) {
-    const element = nums[i];
-    evenify(element)
 
-}
+nums = [11,22,33,44,55]
+evenify_all(nums)
 
 friend_age = [12,13,14,15,16];
-for (let i = 0; i < friend_age.length; i++) {
-    const age = friend_age[i];
-    evenify(age)
-    
-}
+evenify_all(friend_age)
+
 
